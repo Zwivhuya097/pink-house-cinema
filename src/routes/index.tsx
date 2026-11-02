@@ -54,7 +54,6 @@ function Index() {
         />
         <div className="absolute inset-0 bg-cinema" />
         <div className="absolute inset-0 vignette" />
-        <div className="absolute inset-x-0 top-0 h-16 bg-background md:h-10" style={{ opacity: 0 }} />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <p className="animate-rise font-script text-4xl text-primary md:text-6xl">welcome to</p>
           <h1 className="animate-rise font-display text-7xl font-light leading-[0.9] tracking-tight md:text-[11rem]" style={{ animationDelay: ".2s" }}>
