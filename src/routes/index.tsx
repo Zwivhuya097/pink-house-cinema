@@ -131,7 +131,7 @@ function Index() {
           <p className="font-script text-4xl text-primary">after dark</p>
           <h2 className="mt-2 font-display text-5xl font-light md:text-7xl">When the lanterns glow</h2>
           <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {[[skylight, skylightPoster], [candle, candlePoster], [order, orderPoster]].map(([v, p], i) => (
+            {([[skylight, skylightPoster], [candle, candlePoster], [order, orderPoster]] as const).map(([v, p], i) => (
               <div key={i} className="relative overflow-hidden grain vignette">
                 <video src={v.url} poster={p.url} autoPlay muted loop playsInline className="aspect-[9/16] w-full object-cover" />
               </div>
